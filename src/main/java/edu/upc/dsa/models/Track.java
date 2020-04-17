@@ -10,7 +10,7 @@ public class Track {
     static int lastId;
 
     public Track() {
-        this.id = RandomUtils.getId();
+        //this.id = RandomUtils.getId(); La definicion de getId ha cambiado
     }
 
     public Track(String title, String singer) {
