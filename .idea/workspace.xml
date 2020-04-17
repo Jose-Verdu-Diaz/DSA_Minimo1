@@ -2,18 +2,46 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ddb2b188-b816-4975-a78e-0cf8996427fd" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/upc/dsa/Covid19Manager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/upc/dsa/Covid19ManagerImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/upc/dsa/models/Brote.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/upc/dsa/models/Caso.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/upc/dsa/services/Covid19Service.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/edu/upc/dsa/Covid19ManagerImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/upc/dsa/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/upc/dsa/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/upc/dsa/models/Track.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/upc/dsa/models/Track.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest-example2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/rest-example2.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/upc/dsa/TracksManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/upc/dsa/TracksManagerImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/upc/dsa/models/Track.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/upc/dsa/services/TextService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/upc/dsa/services/TracksService.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/upc/dsa/util/RandomUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/upc/dsa/util/RandomUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/edu/upc/dsa/TextServiceTest.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/edu/upc/dsa/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/upc/dsa/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/upc/dsa/models/Track.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/upc/dsa/models/Track.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/upc/dsa/MyExceptionMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/upc/dsa/MyExceptionMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/upc/dsa/TracksManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/upc/dsa/TracksManagerImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/upc/dsa/models/Track.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/upc/dsa/services/TextService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/upc/dsa/services/TracksService$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/upc/dsa/services/TracksService.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/edu/upc/dsa/util/RandomUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/upc/dsa/util/RandomUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/edu/upc/dsa/TextServiceTest.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -31,11 +59,16 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../DSA_Minimo1-EJEMPLO-" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="configurable.group.build" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="edu.upc.dsa" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -71,30 +104,38 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
+    <state x="1245" y="253" key="#com.intellij.ide.util.MemberChooser" timestamp="1587138217150">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="1245" y="253" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1587138217150" />
+    <state x="756" y="399" width="408" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1587138843176">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="756" y="399" width="408" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1080@0.0.1920.1080" timestamp="1587138843176" />
     <state x="133" y="138" key="CommitChangelistDialog2" timestamp="1587130952919">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="133" y="138" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1587130952919" />
-    <state x="740" y="295" key="FileChooserDialogImpl" timestamp="1587114761482">
+    <state x="740" y="295" key="FileChooserDialogImpl" timestamp="1587137461633">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="740" y="295" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1587114761482" />
-    <state width="914" height="297" key="GridCell.Tab.0.bottom" timestamp="1587132401184">
+    <state x="740" y="295" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1587137461633" />
+    <state width="1877" height="297" key="GridCell.Tab.0.bottom" timestamp="1587145881169">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="914" height="297" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1587132401184" />
-    <state width="914" height="297" key="GridCell.Tab.0.center" timestamp="1587132401184">
+    <state width="1877" height="297" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1587145881169" />
+    <state width="1877" height="297" key="GridCell.Tab.0.center" timestamp="1587145881169">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="914" height="297" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1587132401184" />
-    <state width="914" height="297" key="GridCell.Tab.0.left" timestamp="1587132401183">
+    <state width="1877" height="297" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1587145881169" />
+    <state width="1877" height="297" key="GridCell.Tab.0.left" timestamp="1587145881168">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="914" height="297" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1587132401183" />
-    <state width="914" height="297" key="GridCell.Tab.0.right" timestamp="1587132401184">
+    <state width="1877" height="297" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1587145881168" />
+    <state width="1877" height="297" key="GridCell.Tab.0.right" timestamp="1587145881169">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="914" height="297" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1587132401184" />
+    <state width="1877" height="297" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1587145881169" />
     <state x="461" y="182" key="SettingsEditor" timestamp="1585249130718">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -103,5 +144,9 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="656" y="364" key="com.intellij.ide.util.TipDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1587129168377" />
+    <state x="616" y="250" key="run.anything.popup" timestamp="1587144788811">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="616" y="250" key="run.anything.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1587144788811" />
   </component>
 </project>
