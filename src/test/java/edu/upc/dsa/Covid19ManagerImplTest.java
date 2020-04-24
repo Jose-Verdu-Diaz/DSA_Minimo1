@@ -1,45 +1,42 @@
 package edu.upc.dsa;
 
-import javax.ws.rs.client.Client;
-import javax.ws.rs.client.ClientBuilder;
-import javax.ws.rs.client.WebTarget;
-import edu.upc.dsa.models.Brote;
 import edu.upc.dsa.models.Caso;
-
+import edu.upc.dsa.models.Brote;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
-
-import org.glassfish.grizzly.http.server.HttpServer;
-
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-import static org.junit.Assert.assertEquals;
+
+import java.util.*;
 
 public class Covid19ManagerImplTest {
-
-    private HttpServer server;
-    private WebTarget target;
-
     private static Logger logger = Logger.getLogger(Covid19ManagerImplTest.class);
     public Covid19Manager manager = null;
 
+    Brote brote;
+    Caso caso;
+    HashMap<String,Brote> mapaBrotes;
+
     @Before
-    public void setUp() throws Exception {
+    public void setUp() {
+        PropertyConfigurator.configure("src/main/resources/log4j.properties");
+        manager = Covid19ManagerImpl.getInstance();
+    }
 
-        server = Main.startServer();
-        Client c = ClientBuilder.newClient();
-        target = c.target(Main.BASE_URI);
+    @Test
+    public void addBrote(){
+        Assert.assertEquals(201, this.manager.addBrote());
+        Assert.assertEquals(1, this.manager.getNumBrotes());
 
-        Assert.assertEquals(0, manager.getNumBrotes());
-        manager.addBrote();
-        Assert.assertEquals(0, manager.getNumBrotes());
+        mapaBrotes = this.manager.getHashMapBrotes();
+        Assert.assertEquals(1, this.mapaBrotes.size());
     }
 
     @After
-    public void tearDown() throws Exception {
+    public void tearDown() {
         manager.tearDown();
-        server.stop();
     }
 }
+
