@@ -12,7 +12,7 @@ import org.junit.Test;
 import java.util.*;
 
 public class Covid19ManagerImplTest {
-    private static Logger logger = Logger.getLogger(Covid19ManagerImplTest.class);
+    private static Logger log = Logger.getLogger(Covid19ManagerImplTest.class);
     public Covid19Manager manager = null;
 
     Brote brote;
@@ -28,10 +28,25 @@ public class Covid19ManagerImplTest {
     @Test
     public void addBrote(){
         Assert.assertEquals(201, this.manager.addBrote());
-        Assert.assertEquals(1, this.manager.getNumBrotes());
+        Assert.assertEquals(201, this.manager.addBrote());
+        Assert.assertEquals(201, this.manager.addBrote());
+
+        Assert.assertEquals(3, this.manager.getNumBrotes());
 
         mapaBrotes = this.manager.getHashMapBrotes();
-        Assert.assertEquals(1, this.mapaBrotes.size());
+        Assert.assertEquals(3, this.mapaBrotes.size());
+
+        String id = mapaBrotes.keySet().iterator().next();
+
+        brote = this.manager.getBrote(id);
+        Assert.assertEquals(mapaBrotes.get(id),brote);
+
+        /*
+        brote=new Brote("test01");
+        Assert.assertEquals(200,this.manager.setBrote(id,brote));
+        mapaBrotes = this.manager.getHashMapBrotes();
+        Assert.assertEquals(mapaBrotes.get(id).getIdentificador(),id);
+        */
     }
 
     @After
